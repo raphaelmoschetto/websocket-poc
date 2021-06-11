@@ -35,12 +35,13 @@ const Chat = () => {
 
     const handleDateNow = () => {
         const currentdate = new Date();
-        const datetime = "Enviado em: " + currentdate.getDate() + "/"
-            + (currentdate.getMonth() + 1) + "/"
-            + currentdate.getFullYear() + " @ "
-            + currentdate.getHours() + ":"
-            + currentdate.getMinutes() + ":"
-            + currentdate.getSeconds();
+        const datetime = `Enviado em: 
+            ${currentdate.getDate()} /
+            ${(currentdate.getMonth() + 1)} / 
+            ${currentdate.getFullYear()} @ 
+            ${currentdate.getHours()} : 
+            ${currentdate.getMinutes()} : 
+            ${currentdate.getSeconds()}`
 
         return datetime;
     };
